@@ -1,0 +1,778 @@
+html{
+	height: 900px;
+}
+
+body{
+	font-family: Verdana, Arial, sans-serif;
+	color: #726d69;
+	height: 900px;
+	margin: 0;
+}
+
+p{
+	text-align: left;
+}
+
+input[type=submit]{
+	background: #be1522;
+	color: #ffffff;
+	font-weight: bold;
+	border: none;
+	padding: 3px;
+}
+
+textarea{
+	width: 500px;
+	height: 80px;
+	font-size: 16px;
+	color: #726d69;
+	background-color: #e6e6e6;
+	padding: 10px;
+}
+
+h2 {
+	color: #444444;
+}
+
+h3 {
+	color: #707070;
+	font-weight: normal;
+}
+
+table {
+    border-collapse: collapse;
+    width: 90%;
+}
+
+th, td {
+    text-align: left;
+    padding: 10px;
+}
+
+tr:nth-child(even){
+	background-color: #e6e6e6;
+}
+
+th {
+	font-weight: normal;
+    background-color: #be1522;
+    color: white;
+}
+
+table a:link, a:visited {
+    color: #707070;
+    border-radius: 6px;
+    border: 1px solid #be1522;
+    padding: 4px;
+    text-align: center; 
+    text-decoration: none;
+    font-size: 14px;
+    
+}
+
+table a:hover, a:active {
+    background-color: #be1522;
+    color: white;
+}
+
+/* GLOBAL */
+
+.global{
+	width: 1024px;
+	height: 120%;
+	margin: 0 auto;
+	background: linear-gradient(#f0f0f0, #f6f6f6);
+	background-repeat: no-repeat;
+}
+
+.paragrafo_centralizado{
+	text-align: center;
+	font-size: 12px;
+}
+
+.orientacao{
+	color: #52a238;
+	font-weight: bold;
+	text-align: center;
+	font-size: 12px;
+}
+
+/* HEADER */
+
+
+#menu{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #bbbbbb;
+    font-size: 14px;
+}
+
+#menu li{
+	float: left;
+}
+
+#menu li a{
+	display: block;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+}
+
+#menu li a:hover:not(.active) {
+    background-color: #707070;
+}
+
+#ativo {
+    background-color: #be1522;
+}
+
+#logo{
+	padding: 16px;
+	margin-left: 20px;
+	float: left;
+}
+
+#usuario_logado{
+	margin-right: 20px;
+	margin-top: 50px;
+	color: #be1522;
+	float: right;
+}
+
+#links_textuais{
+	float: right;
+	padding: 6px;
+}
+
+#links_textuais a:link, a:visited{
+    color: #be1522;
+    text-align: center;
+    padding: 2px;
+    text-decoration: none;	
+}
+
+#links_textuais a:hover, a:active{
+	color: white;
+	background-color: #be1522;
+}
+
+#miniatura_usuario_logado{
+	border: 1px solid #be1522;
+}
+
+
+/* RODAPÉ */
+
+#rodape{
+	background-color: #bbbbbb;
+	padding-top: 10px;
+	padding-bottom: 10px;
+    width: 1024px;
+	text-align: center;
+    font-size: 14px;
+    color: white;
+    margin: 0 auto;
+}
+
+/* INDEX */
+
+#aula_interativa{
+	padding: 30px;
+	background-color: white;
+	margin-top: 60px;
+	margin-left: 20px;
+	margin-right: 20px;
+	border-radius: 20px;
+	height: 210px;	
+}
+
+#texto_aula_interativa{
+	margin-left: 0px;
+	float: left;
+}
+
+#imagem_aula_interativa{
+	margin-right: 0px;
+	float: right;
+}
+
+#dinamicas{
+	padding: 10px;
+	background-color: white;
+	margin-top: 20px;
+	margin-left: 20px;
+	border-radius: 20px;
+	height: 280px;	
+	width: 294px;
+	float: left;
+}
+
+#agenda{
+	padding: 10px;
+	background-color: white;
+	margin-top: 20px;
+	margin-left: 20px;
+	border-radius: 20px;
+	height: 280px;
+	width: 294px;
+	float: left;
+}
+
+#sistemas{
+	padding: 10px;
+	background-color: white;
+	margin-top: 20px;
+	margin-left: 20px;
+	border-radius: 20px;
+	height: 280px;
+	width: 294px;
+	float: left;
+}
+
+/* AGENDA */
+
+#visualizacao_agenda{
+	padding: 30px;
+	background-color: white;
+	margin-top: 60px;
+	margin-left: 20px;
+	margin-right: 20px;
+	border-radius: 20px;
+	height: 800px;	
+}
+
+.coluna_detalhes_sessao{
+	width: 100px;
+}
+
+.nova_sessao{
+	text-align: right;
+	margin-right: 46px;
+}
+
+/* ARQUIVO */
+
+#visualizacao_arquivo{
+	padding: 30px;
+	background-color: white;
+	margin-top: 60px;
+	margin-left: 20px;
+	margin-right: 20px;
+	border-radius: 20px;
+	height: 760px;	
+}
+
+/* LOGIN */
+
+#login{
+	padding: 30px;
+	background-color: white;
+	margin-top: 60px;
+	margin-left: 20px;
+	margin-right: 20px;
+	border-radius: 20px;
+	height: 380px;	
+}
+
+#formulario_login{
+	float: left;
+	text-align: center;
+}
+
+.campo_login{
+	width: 400px;
+	height: 20px;
+}
+
+#botao_login{
+	padding: 8px;
+}
+
+/* CADASTRO */
+
+#cadastro{
+	padding: 30px;
+	background-color: white;
+	margin-top: 60px;
+	margin-left: 20px;
+	margin-right: 20px;
+	border-radius: 20px;
+	height: 480px;	
+}
+
+#formulario_cadastro{
+	float: left;
+	text-align: center;
+}
+
+#botao_cadastro{
+	padding: 8px;
+}
+
+.mensagem{
+	color: red;
+	font-weight: bold;
+	text-align: center;
+	font-size: 12px;
+}
+
+.mensagem_a_esquerda{
+	color: red;
+	font-weight: bold;
+	font-size: 12px;
+}
+
+.campo_cadastro{
+	width: 400px;
+	height: 20px;
+}
+
+.paragrafo_cadastro{
+	font-size: 12px;
+}
+
+/* FACEBOOK */
+
+.facebook{
+	margin-top: 75px;
+	width: 400px;
+	float: right;
+	text-align: center;
+}
+
+/* PERFIL */
+
+#div_centralizada{
+	width: 980px;
+	margin: 0 auto;
+}
+
+.tabs-container {
+ 	position: relative;
+ 	height: 560px;
+ 	margin-top: 60px;
+ 	border-radius: 20px;
+}
+
+/*
+.tabs-container p{
+  margin: 0;
+  padding: 0;
+}*/
+
+.tabs-container:after {
+ 	content: '.';
+ 	display: block;
+ 	clear: both;
+ 	height: 0;
+ 	font-size: 0;
+ 	line-height: 0;
+ 	visibility: none;
+}
+
+input.tabs {
+ 	display: none;
+}
+
+input.tabs + label {
+ 	line-height: 40px;
+ 	padding: 0 10px;
+ 	float: left;
+ 	background: #707070;
+ 	color: #fff;
+ 	cursor: pointer;
+ 	transition: background ease-in-out .3s;
+ 	font-size: 14px;
+ 	border-radius: 20px 20px 0px 0px;
+}
+
+input.tabs:checked + label {
+ 	color: #000;
+ 	background: #fff;
+}
+
+input.tabs + label + div {
+ 	width: 98%;
+ 	opacity: 0;
+ 	position: absolute;
+ 	background: #fff;
+ 	top: 40px;
+ 	left: 0;
+ 	height: 600px;
+ 	padding: 10px;
+ 	z-index: -1;
+ 	transition: opacity ease-in-out .3s;
+ 	border-radius: 0px 20px 20px 20px;
+}
+
+input.tabs:checked + label + div {
+ 	opacity: 1;
+ 	z-index: 1000;
+}
+
+#imagem_perfil{
+	padding: 10px;
+	text-align: center;
+	float: left;
+}
+
+#foto_perfil{
+	border: 1px solid #be1522;
+	margin-bottom: 10px;
+}
+
+#dados_perfil{
+	padding: 10px;
+	float: left;
+}
+
+.link_perfil, .link_perfil:visited {
+    background-color: white;
+    color: #707070;
+    border: 1px solid #be1522;
+    border-radius: 6px;
+    padding: 5px;
+    text-align: center; 
+    text-decoration: none;
+    display: inline-block;
+}
+
+.link_perfil:hover, .link_perfil:active {
+    background-color: #be1522;
+    color: white;
+}
+
+#foto_selecionada{
+	display: none;
+}
+
+#cortar_imagem{
+	position: fixed; 
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.9);
+	display: none;
+	text-align: center;
+	overflow: auto;
+	color: white;
+	font-size: 14px;
+}
+
+#cortar_imagem p{
+	text-align: center;
+	color: #bbbbbb;
+}
+
+#cortar_imagem h2{
+	color: white;
+}
+
+.erro{
+	color: #be1522;
+	font-weight: bold;
+	font-size: 12px;
+}
+
+#preview_container{
+	width: 600px;
+	height: 600px;
+    margin: 20px auto;
+}
+
+#preview{
+	text-align: center;
+}
+
+#controles button {
+ 	margin: 10px;
+ 	border: 0;
+	background-color: white;
+    padding: 5px;
+    font-weight: normal;
+}
+
+#controles button:hover {
+	background-color: #be1522;
+    cursor: pointer;
+}
+
+.jcrop-holder {
+    display: inline-block;
+}
+
+.info{
+	padding: 10px;
+}
+
+.info input{
+	width: 70px;
+	margin-right: 18px;
+}
+
+#botao_enviar_foto{
+	margin-top: 10px;
+	margin-right: 20px;
+	margin-bottom: 10px;
+	background-color: white;
+	color: black;
+    padding: 10px;
+    width: 110px;
+    text-align: center; 
+    font-size: 18px;
+    font-weight: normal;
+}
+
+#botao_enviar_foto:hover{
+	background-color: #be1522;
+    color: white;
+    cursor: pointer;
+}
+
+#botao_cancelar{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	background-color: white;
+    padding: 10px;
+    width: 110px;
+    text-align: center; 
+    font-size: 18px;
+    font-weight: normal;
+   	border: 0;
+}
+
+#botao_cancelar:hover{
+	background-color: #be1522;
+    color: white;
+    cursor: pointer;
+}
+
+#alterar_foto{
+	text-align: center;
+}
+
+#opcoes_alterar_foto{
+	padding: 4px;
+}
+
+.botao_alterar_foto{
+	background-color: white;
+    color: #707070;
+    border: 1px solid #be1522;
+    border-radius: 6px;
+    padding: 5px;
+    text-align: center; 
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.botao_alterar_foto:hover{
+	background-color: #be1522;
+    color: white;
+    cursor: pointer;
+}
+
+#lista_perfil{
+	list-style-type: none;
+}
+
+#lista_perfil li{
+	margin: 20px;
+	padding: 6px;
+	/*border-left: 8px solid #be1522;*/
+	/*border-bottom: 1px solid #be1522;*/
+}
+
+#lista_links_perfil{
+	list-style-type: none;
+}
+
+#lista_links_perfil li{
+	float: left;
+	margin-left: 26px; 
+}
+
+/* ALTERAR CADASTRO E ALTERAR SENHA */
+
+.alterar_cadastro{
+	padding: 30px;
+	background-color: white;
+	margin-top: 60px;
+	margin-left: 20px;
+	margin-right: 20px;
+	border-radius: 20px;
+	height: 380px;	
+}
+
+.alterar_cadastro p{
+	font-size: 12px;
+}
+
+#botao_alterar_cadastro{
+	padding: 8px;
+}
+
+#botao_alterar_senha{
+	padding: 8px;
+}
+
+/* DETALHAR SESSÃO */
+
+.detalhes_sessao{
+	padding: 30px;
+	background-color: white;
+	margin-top: 60px;
+	margin-left: 20px;
+	margin-right: 20px;
+	border-radius: 20px;
+	height: 640px;	
+}
+
+.titulo_sessao{
+	width: 98%;
+	background-color: #be1522;
+	border-radius: 10px;
+	padding: 10px;
+	color: white;
+}
+
+.titulo_sessao h2{
+	color: white;
+	margin: 0;
+}
+
+.titulo_sessao p{
+	margin: 0;
+	color: silver;
+}
+
+.mensagem_participacao{
+	color: #52a238;
+	font-weight: bold;
+	text-align: center;
+	font-size: 16px;
+}
+
+.dados_sessao{
+	float: left;
+	width: 60%;
+}
+
+.subdivisao_dados_sessao{
+	margin-top: 20px;
+	padding: 10px;
+	border: solid 1px #be1522;
+	border-radius: 10px;
+}
+
+.subdivisao_dados_sessao h3{
+	margin: 0;
+	color: #be1522;
+}
+
+.participacao_sessao{
+	margin-top: 20px;
+	float: right;
+	padding: 10px;
+	border: solid 1px #be1522;
+	border-radius: 10px;
+	width: 35%;
+	
+}
+
+.participacao_sessao h3{
+	margin-left: 0;
+	margin-right: 0;
+	margin-top: 0;
+	margin-bottom: 18px;
+	color: #be1522;
+}
+
+#botoes_sessao{
+	text-align: center;
+}
+
+.link_facebook, .link_facebook:visited {
+    background-color: #4267b2;
+    color: white;
+    border: 1px solid #4267b2;
+    border-radius: 6px;
+    padding: 5px;
+    text-align: center; 
+    text-decoration: none;
+    display: inline-block;
+}
+
+.link_facebook:hover, .link_facebook:active {
+    background-color: #365899;
+}
+
+.centralizado{
+	text-align: center;
+}
+
+.botao_facebook{
+	background-color: #4267b2;
+    color: white;
+    border: 0;
+    border-radius: 6px;
+    padding: 8px;
+    text-align: center; 
+    text-decoration: none;
+}
+
+.botao_facebook:hover{
+	background-color: #365899;
+	cursor: pointer;
+}
+
+#participantes_confirmados{
+	margin-top: 20px;
+}
+
+/* DETALHAR SESSÃO ARQUIVADA */
+
+#subdivisao_dados_sessao_arquivada{
+	margin-top: 22px;
+	padding: 10px;
+	border: solid 1px #be1522;
+	border-radius: 10px;
+}
+
+#subdivisao_dados_sessao_arquivada h3{
+	margin: 0;
+	color: #be1522;
+}
+
+/* LOG */
+
+#log{
+	padding: 30px;
+	background-color: white;
+	margin-top: 60px;
+	margin-left: 20px;
+	margin-right: 20px;
+	border-radius: 20px;
+	font-family: 'Lucida Grande',Verdana,Arial;
+ 	font-size: 11px;
+  	line-height:normal
+}
+
+#titulo_log{
+	color: #444444;
+	font-weight: bold;
+	font-size: 24px;
+}
+
+.direita{
+	text-align: right;
+}
+
+#conversa{
+	height: 700px;
+	border: 1px solid #bbbbbb;
+}
