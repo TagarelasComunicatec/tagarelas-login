@@ -17,7 +17,8 @@ public class StringUtil {
 	private static final String MIME_PJPEG = "image/pjpeg";
 	
 	public static final String FACEBOOK = "facebook";
-	public static final String DOMINIO_APLICACAO = "http://208f49c9.ngrok.io";
+	public static final String DOMINIO_APLICACAO = "http://localhost:8080";
+	public static final String ID_APLICATIVO = "";
 	
 	private static Map<String, String> extensaoImagens = new HashMap<>();
 	

@@ -79,6 +79,7 @@ public class SessaoBatePapoController {
 		} else {
 			modelAndView = new ModelAndView("log");
 			modelAndView.addObject("sessao", sessaoBatePapo);
+			modelAndView.addObject("idAplicativo", StringUtil.ID_APLICATIVO);
 			modelAndView.addObject("dominio", StringUtil.DOMINIO_APLICACAO);
 		}
 		

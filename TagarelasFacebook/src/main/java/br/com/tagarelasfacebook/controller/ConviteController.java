@@ -37,6 +37,7 @@ public class ConviteController {
 		
 		if (sessaoBatePapo != null){
 			modelAndView.addObject("sessao", sessaoBatePapo);
+			modelAndView.addObject("idAplicativo", StringUtil.ID_APLICATIVO);
 			modelAndView.addObject("dominio", StringUtil.DOMINIO_APLICACAO);
 			convite.setSessaoBatePapo(sessaoBatePapo);
 			

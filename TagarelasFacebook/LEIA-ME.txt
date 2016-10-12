@@ -1,0 +1,29 @@
+Este projeto foi desenvolvido no Eclipse Mars com o servidor WildFly 8.
+
+O SGBD utilizado é o PostgreSQL 9. O backup do banco de dados está incluído
+neste projeto. As configurações para acesso ao banco de dados estão no arquivo
+jdbc.properties. Ajuste as configurações conforme o seu banco de dados 
+caso seja necessário.
+
+Para fazer o login pelo Facebook é necessário ter um ID de aplicativo e
+uma chave secreta fornecidos pelo Facebook. Para isso, cadastre e configure
+o seu aplicativo em https://developers.facebook.com/. O ID do aplicativo e 
+a chave secreta devem ser inseridos no arquivo application.properties. 
+O ID do aplicativo deve ser inserido também na classe StringUtil, 
+como valor da constante ID_APLICATIVO.
+
+Para conseguir compartilhar links no Facebook é necessário que seja usada
+uma URL real (http://localhost:8080 não funciona). O aplicativo ngrok
+(https://ngrok.com/) pode ser usado para fazer o tunelamento de uma URL para a 
+sua máquina local. O domínio da URL que vai ser usada para compartilhar os links
+deve ser inserido como valor da constante DOMINIO_APLICACAO na classe 
+StringUtil.
+
+Os arquivos jdbc.properties, application.properties e o backup do banco de
+dados podem ser encontrados em /TagarelasFacebook/src/main/resources
+
+A classe StringUtil pode ser encontrada em
+/TagarelasFacebook/src/main/java/br/com/tagarelasfacebook/util/
+
+Rio de Janeiro, 12/10/2016
+Felipe Carvalho dos Reis (e-mail: felipecrbr@gmail.com)
